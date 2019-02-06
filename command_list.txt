@@ -1,0 +1,73 @@
+// This is the list of commands used by this assignment.
+// Lines starting with "//" are ignored.
+// Each line should contain the command and the number of arguments.
+// Format:
+// COMMAND NUMBER_OF_ARGUMENTS
+// ::HELP_TEXT
+// Commands can be annotated by adding :: after the command.
+
+? 1
+::Gets help and args for command
+::Usage: ? [cmd]
+
+clear 0
+::Clears the screen.
+cd 1
+::Changes current directory to a specified path
+::Usage: cd [directory_path]
+
+cd 0
+::Changes current directory to the default home path
+
+ls 1
+::lists directory contents of files and directories. 
+::Usage: ls [file|dir]
+
+ls 0
+:: lists directory contents of files and directories. 
+pwd 0
+::Displays the current working directory.
+
+cp 2
+::Copies from source to destination.
+::Usage: cp source destination.
+
+mv 2
+::moves files and directories.
+::Usage: mv source destination.
+
+rm 1
+::remove objects,directories and files from file systems.
+::Usage: rm [directory_path]
+
+mkdir 1
+::makes a new directory.
+::Usage: mkdir [directory_path]
+
+rmdir 1
+::Removes an empty directory.
+::Usage: rmdir [directory_path]
+
+date 0
+::Prints current date and time.
+
+cat 1
+::Reads file sequentially and prints it out
+::Usage:cat [file_name1]
+cat 2
+::Reads files sequentially, writing them to standard output or concatinatincg them to external file.
+::Usage:cat [file_name1] [file_name2] 
+
+more 0
+::More is a very basic pager, originally allowing only forward navigation through a file, though newer implementations do allow for limited backward movement.
+
+
+args 1
+::Prints out number of arguments and all parameters given to a specific command.
+::Usage: args command
+
+help 0
+::Prints help
+
+exit 0
+::terminates an exits the program 
